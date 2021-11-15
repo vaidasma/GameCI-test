@@ -42,7 +42,7 @@ jobs:
           restore-keys: |
             Library-test-project-
             Library-
-      - uses: game-ci/unity-test-runner@v2.0-alpha-5
+      - uses: game-ci/unity-test-runner
         id: testRunner
         with:
           testMode: ${{ matrix.testMode }}
@@ -89,6 +89,7 @@ jobs:
             Library-
       - uses: game-ci/unity-builder@v2
         with:
+          projectPath: /AndroidNativePluginMethods-TestProject
           targetPlatform: WebGL
 
       - uses: actions/upload-artifact@v2
@@ -131,6 +132,7 @@ jobs:
             Library-
       - uses: game-ci/unity-builder@v2
         with:
+          projectPath: /AndroidNativePluginMethods-TestProject
           targetPlatform: StandaloneWindows64
 
       - uses: actions/upload-artifact@v2
@@ -173,6 +175,7 @@ jobs:
             Library-
       - uses: game-ci/unity-builder@v2
         with:
+          projectPath: /AndroidNativePluginMethods-TestProject
           targetPlatform: Android
 
       - uses: actions/upload-artifact@v2
