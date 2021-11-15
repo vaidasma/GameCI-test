@@ -1,4 +1,4 @@
-name: GameCI Template 🎮
+name: TESTING CI 🎮
 
 on: workflow_dispatch
 
@@ -89,7 +89,7 @@ jobs:
             Library-
       - uses: game-ci/unity-builder@v2
         with:
-          projectPath: AndroidNativePluginMethods-TestProject
+          #projectPath: AndroidNativePluginMethodsTestProject
           targetPlatform: WebGL
 
       - uses: actions/upload-artifact@v2
@@ -132,7 +132,7 @@ jobs:
             Library-
       - uses: game-ci/unity-builder@v2
         with:
-          projectPath: AndroidNativePluginMethods-TestProject
+         # projectPath: AndroidNativePluginMethodsTestProject
           targetPlatform: StandaloneWindows64
 
       - uses: actions/upload-artifact@v2
@@ -175,7 +175,7 @@ jobs:
             Library-
       - uses: game-ci/unity-builder@v2
         with:
-          projectPath: AndroidNativePluginMethods-TestProject
+         # projectPath: AndroidNativePluginMethodsTestProject
           targetPlatform: Android
 
       - uses: actions/upload-artifact@v2
