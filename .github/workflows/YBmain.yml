@@ -42,7 +42,7 @@ jobs:
           restore-keys: |
             Library-test-project-
             Library-
-      - uses: game-ci/unity-test-runner@v2
+      - uses: game-ci/unity-test-runner@master
         id: testRunner
         with:
           testMode: ${{ matrix.testMode }}
