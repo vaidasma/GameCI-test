@@ -45,6 +45,7 @@ jobs:
       - uses: game-ci/unity-test-runner@master
         id: testRunner
         with:
+          unityVersion:: 2020.3.22f1
           testMode: ${{ matrix.testMode }}
 
       - uses: actions/upload-artifact@v2
