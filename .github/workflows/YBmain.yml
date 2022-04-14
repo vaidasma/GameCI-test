@@ -42,7 +42,7 @@ jobs:
           restore-keys: |
             Library-test-project-
             Library-
-      - uses: game-ci/unity-test-runner@master
+      - uses: game-ci/unity-test-runner@v2
         id: testRunner
         with:
           unityVersion: 2020.3.22f1
